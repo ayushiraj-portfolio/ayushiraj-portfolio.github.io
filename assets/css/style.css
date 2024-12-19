@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
 * {
-  margin: 0;
+
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -22,7 +22,7 @@ body {
 }
 
 *::selection {
-  background: #159B8B;
+  background: #FDA5C8;
   color: #fff;
 }
 
@@ -37,7 +37,7 @@ html::-webkit-scrollbar {
         background: #fff;
     }
 html::-webkit-scrollbar-thumb {
-  background: #244855;
+  background: #DC6E9F;
 }
 
 /* pre loader start */
@@ -70,7 +70,7 @@ header {
     justify-content: space-between;
     padding: 1.7rem 10%;
     height: 6.5rem;
-    background-color: #244855;
+    background-color: #DC6E9F;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
 section {
@@ -84,7 +84,7 @@ section {
   text-align: center;
 }
 .heading span {
-  color: #F1949C;
+  color: #191919;
 }
 header .logo {
     font-size: 1.9rem;
@@ -117,8 +117,8 @@ header .navbar ul li a {
 }
     header .navbar ul li a.active,
     header .navbar ul li a:hover {
-        color: #F1949C;
-        border-bottom: 0.2rem solid #159B8B;
+        color: #191919;
+        border-bottom: 0.2rem solid #FDA5C8;
         padding: 0.5rem 0;
     }
 /* navbar ends */
@@ -142,7 +142,7 @@ header .navbar ul li a {
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #244855;
+    background-color: #DC6E9F;
   }
   header .navbar ul {
     flex-flow: column;
@@ -167,7 +167,7 @@ header .navbar ul li a {
     padding: 1rem;
     color: #fff;
     border-radius: 0.5rem;
-    border-bottom: 0.5rem solid #F1949C;
+    border-bottom: 0.5rem solid #191919;
   }
   .fa-times {
     transform: rotate(180deg);
@@ -224,13 +224,13 @@ header .navbar ul li a {
     .home .content h2 {
         font-size: 5rem;
         font-weight: 800;
-        color: #159B8B;
+        color: #FFFFFF;
     }
-.home .content h2 span {
-  font-size: 5rem;
-  font-weight: 800;
-  color: #159B8B;
-}
+        .home .content h2 span {
+            font-size: 5rem;
+            font-weight: 800;
+            color: #C73987;
+        }
 .home .content p {
   font-size: 2.5rem;
   color: #000;
@@ -239,20 +239,19 @@ header .navbar ul li a {
 }
     .home .content p span {
         font-size: 2.5rem;
-        color: #874f41;
+        color: #C73987;
         font-weight: 600;
         padding: 1rem 0;
     }
     .home .btn {
         margin-top: 1rem;
-        position: absolute;
         line-height: 0;
         padding: 1.6rem 3rem;
         border-radius: 4em;
         transition: 0.5s;
         color: #fff;
-        background: #244855;
-        box-shadow: 0px 5px 18px #244855;
+        background: #DC6E9F;
+        box-shadow: 0px 5px 18px #DC6E9F;
         font-family: "Nunito", sans-serif;
     }
 .home .btn span {
@@ -266,7 +265,7 @@ header .navbar ul li a {
   transition: 0.3s;
 }
         .home .btn:hover {
-            background: #90aead;
+            background: #FFFFFF;
         }
 .home .btn:hover i {
   transform: translateX(5px);
@@ -289,7 +288,7 @@ header .navbar ul li a {
     font-size: 2rem;
     display: inline-block;
     line-height: 44px;
-    color: #159B8B;
+    color: #FDA5C8;
     background-color: #09011b;
     width: 44px;
     height: 44px;
@@ -306,6 +305,30 @@ header .navbar ul li a {
   color: #fff;
   background-color: #0685da;
 }
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire container */
+    z-index: -1; /* Send the video behind the content */
+}
+
+#overlay {
+    position: relative;
+    z-index: 1; /* Ensure content stays above the video */
+    text-align: center;
+    color: #fff; /* Adjust text color for better contrast */
+}
+
 .social-icons a.github:hover {
   background-color: #0e0e0e;
 }
@@ -346,10 +369,10 @@ header .navbar ul li a {
 
 /* about section starts */
 .about {
-  background: #fbe9d0;
+  background: #FDA5C8;
 }
 .about .heading{
-    color: #874f41;
+    color: #C73987;
 }
 .about .row {
   display: flex;
@@ -378,23 +401,24 @@ header .navbar ul li a {
   flex: 1 1 45rem;
   padding: 3rem;
 }
-.about .row .content h3 {
-  color: rgb(27, 27, 27);
-  font-size: 2.5rem;
-}
+    .about .row .content h3 {
+        color: #C73987;
+        font-size: 2.5rem;
+    }
 .about .row .content .tag {
   font-size: 1.4rem;
   color: #020133;
   font-weight: 600;
   margin-top: 1rem;
 }
-.about .row .content p {
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
-  font-family: "Nunito";
-  font-weight: 600;
-  text-transform: none;
-}
+    .about .row .content p {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        font-family: "Nunito";
+        font-weight: 600;
+        text-transform: none;
+        color: #C73987;
+    }
 .about .row .content .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -406,10 +430,10 @@ header .navbar ul li a {
   text-transform: none;
 }
     .about .row .content .box-container .box p span {
-        color: #244855;
+        color: #DC6E9F;
     }
     .about .row .content .box-container .box p {
-        color: #244855;
+        color: #DC6E9F;
     }
     .resumebtn {
         margin-top: 6rem;
@@ -418,9 +442,9 @@ header .navbar ul li a {
         padding: 1.7rem 3rem;
         border-radius: 0.5em;
         transition: 0.3s;
-        color: #874f41;
-        background: #90aead;
-        box-shadow: 0px 5px 10px #90aead;
+        color: #C73987;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 10px #FFFFFF;
         font-family: "Nunito", sans-serif;
     }
 .resumebtn .btn span {
@@ -434,7 +458,7 @@ header .navbar ul li a {
   transition: 0.3s;
 }
 .resumebtn .btn:hover {
-  background: #244855;
+  background: #DC6E9F;
   color: #fff;
 }
 .resumebtn .btn:hover i {
@@ -467,17 +491,17 @@ header .navbar ul li a {
 /* skills section starts */
 .skills {
     min-height: 90vh;
-    background: #e64833;
+    background: #191919;
 }
 .skills h2 {
   color: #fff;
 }
     .skills .heading span {
-        color: #fbe9d0;
+        color: #FDA5C8;
     }
     .skills .container {
-        background: rgba(36, 72, 85, 0.2);
-        color: #fbe9d0;
+        background: #ffffff;
+        color: #FDA5C8;
         border-radius: 1rem;
         padding: 2rem;
         width: 90%;
@@ -495,13 +519,13 @@ header .navbar ul li a {
             padding: 10px;
             border-radius: 1rem;
             box-shadow: 0 4px 10px rgba(36, 72, 85, 0.2);
-            background: rgba(36, 72, 85, 0.9);
+            background: #FDA5C8;
             transition: 0.2s;
         }
             .skills .container .bar:hover {
                 box-shadow: 0 8px 10px rgba(144, 174, 173, 0.8) !important;
-                background-color: rgba(144, 174, 173, 0.9) !important;
-                color: #244855;
+                background-color: #C73987 !important;
+                color: #DC6E9F;
             }
 .skills .container .bar .info {
   display: flex;
@@ -518,6 +542,7 @@ header .navbar ul li a {
   font-weight: 500;
   font-family: "Poppins";
   margin-left: 0.5rem;
+  color:#ffffff
 }
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
@@ -541,11 +566,11 @@ header .navbar ul li a {
 
 /* education section starts */
 .education {
-    background: #874f41;
+    background: #C73987;
     min-height: 80vh;
 }
     .education .heading {
-        color: #fbe9d0;
+        color: #FFFFFF;
     }
 .education .qoute {
   font-size: 1.5rem;
@@ -572,7 +597,7 @@ header .navbar ul li a {
         margin-top: 2rem;
         overflow: hidden;
         transition: 0.3s;
-        background: #fbe9d0;
+        background: #FFFFFF;
     }
 .education .box-container .box:hover {
   transform: scale(1.03);
@@ -659,7 +684,7 @@ header .navbar ul li a {
   padding: 1rem;
 }
 .work .heading span {
-  color: #F1949C;
+  color: #191919;
 }
 .work .box-container {
   display: flex;
@@ -771,7 +796,7 @@ header .navbar ul li a {
 
 /* experience section starts */
 .experience {
-    background: #90aead;
+    background: #FFFFFF;
 }
 .experience .timeline {
     position: relative;
@@ -782,7 +807,7 @@ header .navbar ul li a {
         content: "";
         position: absolute;
         width: 6px;
-        background: #fbe9d0;
+        background: #FDA5C8;
         top: 0;
         bottom: 0;
         left: 50%;
@@ -802,8 +827,8 @@ header .navbar ul li a {
         width: 25px;
         height: 25px;
         right: -17px;
-        background-color: #fbe9d0;
-        border: 4px solid #e64833;
+        background-color: #FDA5C8;
+        border: 4px solid #191919;
         top: 15px;
         border-radius: 50%;
         z-index: 100;
@@ -828,9 +853,9 @@ header .navbar ul li a {
         width: 0;
         z-index: 1;
         right: 30px;
-        border: medium solid #244855;
+        border: medium solid #DC6E9F;
         border-width: 10px 0 10px 10px;
-        border-color: transparent transparent transparent #244855;
+        border-color: transparent transparent transparent #DC6E9F;
     }
 /* arrows pointing left  */
     .experience .right::before {
@@ -841,21 +866,21 @@ header .navbar ul li a {
         width: 0;
         z-index: 1;
         left: 30px;
-        border: medium solid #244855;
+        border: medium solid #DC6E9F;
         border-width: 10px 10px 10px 0;
-        border-color: transparent #244855 transparent transparent;
+        border-color: transparent #DC6E9F transparent transparent;
     }
 .experience .right::after {
   left: -16px;
 }
     .experience .heading {
-        color: #244855;
+        color: #DC6E9F;
     }
     .experience .content {
-        background-color: #244855;
+        background-color: #DC6E9F;
         position: relative;
         border-radius: 6px;
-        color:#fbe9d0;
+        color:#FFFFFF;
     }
 .experience .content .tag {
   font-size: 1.3rem;
@@ -885,7 +910,7 @@ header .navbar ul li a {
   border-radius: 0.5em;
   transition: 0.5s;
   color: #fff;
-  background: #F1949C;
+  background: #191919;
   box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
   text-align: center;
 }
@@ -927,9 +952,9 @@ header .navbar ul li a {
   }
   .experience .container::before {
     left: 61px;
-    border: medium solid #244855;
+    border: medium solid #DC6E9F;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #244855 transparent transparent;
+    border-color: transparent #DC6E9F transparent transparent;
   }
   .experience .left::after {
     left: 15px;
@@ -1019,11 +1044,11 @@ form .message textarea {
 .field input:focus,
 .message textarea:focus {
   padding-left: 47px;
-  border: 2px solid #F1949C;
+  border: 2px solid #191919;
 }
 .field input:focus ~ i,
 .message textarea:focus ~ i {
-  color: #F1949C;
+  color: #191919;
 }
 form .message {
   position: relative;
@@ -1058,7 +1083,7 @@ form .button-area {
   cursor: pointer;
   border-radius: 5px;
   padding: 13px 25px;
-  background: #F1949C;
+  background: #191919;
   box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
   transition: 0.3s ease;
   font-family: "Nunito", sans-serif;
@@ -1108,7 +1133,7 @@ form .button-area {
 .footer {
   min-height: auto;
   padding-top: 0;
-  background: #244855;
+  background: #DC6E9F;
 }
 .footer .box-container {
   display: flex;
@@ -1127,7 +1152,7 @@ form .button-area {
 }
 .footer .box-container .box p {
   font-size: 1.5rem;
-  color: #ccc;
+  color: #ffffff;
   padding: 0.7rem 0;
   text-transform: none;
 }
@@ -1142,7 +1167,7 @@ form .button-area {
   display: block;
 }
 .footer .box-container .box a:hover {
-  color: #159B8B;
+  color: #FDA5C8;
 }
 .footer .box-container .box .share {
   display: flex;
@@ -1166,7 +1191,7 @@ form .button-area {
   background: transparent;
   transform: scale(0.98);
   border: 0.1rem solid rgb(180, 178, 178);
-  color: #159B8B;
+  color: #FDA5C8;
 }
 .footer .credit {
   padding: 1rem 0 0 0;
@@ -1178,7 +1203,7 @@ form .button-area {
   border-top: 0.1rem solid #fff3;
 }
 .footer .credit a {
-  color: #159B8B;
+  color: #FDA5C8;
 }
 .footer .fa {
   color: #e90606;
@@ -1230,7 +1255,7 @@ form .button-area {
     right: 2rem;
     padding: 1rem 1.5rem;
     font-size: 2rem;
-    background: #244855;
+    background: #DC6E9F;
     color: #fff;
     border-radius: 50%;
     transition: 1s linear;
