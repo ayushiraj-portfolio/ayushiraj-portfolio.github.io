@@ -37,7 +37,7 @@ html::-webkit-scrollbar {
         background: #fff;
     }
 html::-webkit-scrollbar-thumb {
-  background: #DC6E9F;
+  background: #655A7C;
 }
 
 /* pre loader start */
@@ -70,7 +70,7 @@ header {
     justify-content: space-between;
     padding: 1.7rem 10%;
     height: 6.5rem;
-    background-color: #DC6E9F;
+    background-color: #655A7C;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
 section {
@@ -142,7 +142,7 @@ header .navbar ul li a {
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #DC6E9F;
+    background-color: #655A7C;
   }
   header .navbar ul {
     flex-flow: column;
@@ -250,8 +250,8 @@ header .navbar ul li a {
         border-radius: 4em;
         transition: 0.5s;
         color: #fff;
-        background: #DC6E9F;
-        box-shadow: 0px 5px 18px #DC6E9F;
+        background: #655A7C;
+        box-shadow: 0px 5px 18px #655A7C;
         font-family: "Nunito", sans-serif;
     }
 .home .btn span {
@@ -430,10 +430,10 @@ header .navbar ul li a {
   text-transform: none;
 }
     .about .row .content .box-container .box p span {
-        color: #DC6E9F;
+        color: #655A7C;
     }
     .about .row .content .box-container .box p {
-        color: #DC6E9F;
+        color: #655A7C;
     }
     .resumebtn {
         margin-top: 6rem;
@@ -458,7 +458,7 @@ header .navbar ul li a {
   transition: 0.3s;
 }
 .resumebtn .btn:hover {
-  background: #DC6E9F;
+  background: #655A7C;
   color: #fff;
 }
 .resumebtn .btn:hover i {
@@ -525,7 +525,7 @@ header .navbar ul li a {
             .skills .container .bar:hover {
                 box-shadow: 0 8px 10px rgba(144, 174, 173, 0.8) !important;
                 background-color: #C73987 !important;
-                color: #DC6E9F;
+                color: #655A7C;
             }
 .skills .container .bar .info {
   display: flex;
@@ -853,9 +853,9 @@ header .navbar ul li a {
         width: 0;
         z-index: 1;
         right: 30px;
-        border: medium solid #DC6E9F;
+        border: medium solid #655A7C;
         border-width: 10px 0 10px 10px;
-        border-color: transparent transparent transparent #DC6E9F;
+        border-color: transparent transparent transparent #655A7C;
     }
 /* arrows pointing left  */
     .experience .right::before {
@@ -866,18 +866,18 @@ header .navbar ul li a {
         width: 0;
         z-index: 1;
         left: 30px;
-        border: medium solid #DC6E9F;
+        border: medium solid #655A7C;
         border-width: 10px 10px 10px 0;
-        border-color: transparent #DC6E9F transparent transparent;
+        border-color: transparent #655A7C transparent transparent;
     }
 .experience .right::after {
   left: -16px;
 }
     .experience .heading {
-        color: #DC6E9F;
+        color: #655A7C;
     }
     .experience .content {
-        background-color: #DC6E9F;
+        background-color: #655A7C;
         position: relative;
         border-radius: 6px;
         color:#FFFFFF;
@@ -952,9 +952,9 @@ header .navbar ul li a {
   }
   .experience .container::before {
     left: 61px;
-    border: medium solid #DC6E9F;
+    border: medium solid #655A7C;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #DC6E9F transparent transparent;
+    border-color: transparent #655A7C transparent transparent;
   }
   .experience .left::after {
     left: 15px;
@@ -1133,7 +1133,7 @@ form .button-area {
 .footer {
   min-height: auto;
   padding-top: 0;
-  background: #DC6E9F;
+  background: #655A7C;
 }
 .footer .box-container {
   display: flex;
@@ -1255,7 +1255,7 @@ form .button-area {
     right: 2rem;
     padding: 1rem 1.5rem;
     font-size: 2rem;
-    background: #DC6E9F;
+    background: #655A7C;
     color: #fff;
     border-radius: 50%;
     transition: 1s linear;
@@ -1265,4 +1265,5 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
 
