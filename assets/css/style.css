@@ -458,7 +458,7 @@ header .navbar ul li a {
   transition: 0.3s;
 }
 .resumebtn .btn:hover {
-  background: #655A7C;
+  background: #2E2E2E;
   color: #fff;
 }
 .resumebtn .btn:hover i {
@@ -1265,6 +1265,7 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
 
 
 
