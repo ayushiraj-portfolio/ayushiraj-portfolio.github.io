@@ -566,7 +566,7 @@ header .navbar ul li a {
 
 /* education section starts */
 .education {
-    background: #C73987;
+    background: #9A919E;
     min-height: 80vh;
 }
     .education .heading {
@@ -1265,5 +1265,6 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
 
 
