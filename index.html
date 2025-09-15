@@ -342,6 +342,7 @@
         article.innerHTML = `
           <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
           <p>${item.description.replace(/<[^>]+>/g, '').substring(0, 150)}...</p>
+          
         `;
         container.appendChild(article);
       });
@@ -446,6 +447,7 @@
 
 </body>
 </html>
+
 
 
 
