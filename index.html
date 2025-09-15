@@ -329,23 +329,59 @@
 </blockquote>
 <script async src="https://medium.com/media.js"></script>
 
-    <iframe 
-  src="https://medium.com/@ayushi.raj7a/espn-cricinfo-ux-study-76a131cd0269" 
-  width="600" 
-  height="400" 
-  scrolling="no" 
-  frameborder="0" 
-  allowfullscreen>
-</iframe>
+<div id="medium-articles"></div>
 
-    <iframe 
-  src="https://medium.com/@ayushi.raj7a/hautefinds-paper-prototype-bcb517881b85" 
-  width="600" 
-  height="400" 
-  scrolling="no" 
-  frameborder="0" 
-  allowfullscreen>
-</iframe>
+<script>
+  async function loadMediumFeed() {
+    const rssUrl = `https://medium.com/feed/@ayushi.raj7a`;
+    const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
+
+    try {
+      const res = await fetch(apiUrl);
+      const data = await res.json();
+
+      const container = document.getElementById("medium-articles");
+      container.innerHTML = "";
+
+      data.items.slice(0, 3).forEach(item => { // show top 3 articles
+        const article = document.createElement("div");
+        article.className = "article-card";
+        article.innerHTML = `
+          <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
+          <p>${item.description.replace(/<[^>]+>/g, '').substring(0, 150)}...</p>
+        `;
+        container.appendChild(article);
+      });
+    } catch (err) {
+      console.error("Error loading Medium feed:", err);
+    }
+  }
+
+  loadMediumFeed();
+</script>
+
+<style>
+  #medium-articles {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  .article-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fafafa;
+  }
+  .article-card h3 {
+    margin: 0 0 0.5rem;
+  }
+  .article-card a {
+    text-decoration: none;
+    color: #1a8917; /* Medium green */
+  }
+</style>
+
 </section>
 
 
@@ -415,6 +451,7 @@
 
 </body>
 </html>
+
 
 
 
