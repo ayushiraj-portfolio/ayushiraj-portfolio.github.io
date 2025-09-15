@@ -342,8 +342,8 @@
         article.innerHTML = `
           <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
           <p>${item.description.replace(/<[^>]+>/g, '').substring(0, 150)}...</p>
-          <div class="resumebtn">
-            <a href="${item.link}" target="_blank" class="btn"><span>Read more...</span>
+          <div class="resumebtn" style="margin-top:0rem;">
+            <a href="${item.link}" target="_blank" class="btn" style="padding: 1rem 1rem; color: #655A7C; box-shadow: none;"><span>Read more...</span>
                 <i class="fas fa-chevron-right"></i>
             </a>
         </div>
@@ -373,12 +373,12 @@
   }
   .article-card h3 {
     margin: 0 0 0.5rem;
-    font-size: 80%;
+    font-size: 2.5rem;
   }
   .article-card a {
     text-decoration: none;
     color: #655A7C; /* Medium green */
-    font-size: 80%;
+    font-size: 1.5rem;
   }
 </style>
 
@@ -451,6 +451,7 @@
 
 </body>
 </html>
+
 
 
 
