@@ -372,7 +372,7 @@ header .navbar ul li a {
   background: #9A919E;
 }
 .about .heading{
-    color: #C73987;
+    color: #655A7C;
 }
 .about .row {
   display: flex;
@@ -1265,6 +1265,7 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
 
 
 
