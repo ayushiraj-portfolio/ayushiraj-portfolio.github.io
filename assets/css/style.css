@@ -229,7 +229,7 @@ header .navbar ul li a {
         .home .content h2 span {
             font-size: 5rem;
             font-weight: 800;
-            color: #C73987;
+            color: #4E485C;
         }
 .home .content p {
   font-size: 2.5rem;
@@ -239,7 +239,7 @@ header .navbar ul li a {
 }
     .home .content p span {
         font-size: 2.5rem;
-        color: #C73987;
+        color: #4E485C;
         font-weight: 600;
         padding: 1rem 0;
     }
@@ -402,7 +402,7 @@ header .navbar ul li a {
   padding: 3rem;
 }
     .about .row .content h3 {
-        color: #C73987;
+        color: #4E485C;
         font-size: 2.5rem;
     }
 .about .row .content .tag {
@@ -417,7 +417,7 @@ header .navbar ul li a {
         font-family: "Nunito";
         font-weight: 600;
         text-transform: none;
-        color: #C73987;
+        color: #4E485C;
     }
 .about .row .content .box-container {
   display: flex;
@@ -442,7 +442,7 @@ header .navbar ul li a {
         padding: 1.7rem 3rem;
         border-radius: 0.5em;
         transition: 0.3s;
-        color: #C73987;
+        color: #4E485C;
         background: #FFFFFF;
         box-shadow: 0px 5px 10px #FFFFFF;
         font-family: "Nunito", sans-serif;
@@ -524,7 +524,7 @@ header .navbar ul li a {
         }
             .skills .container .bar:hover {
                 box-shadow: 0 8px 10px rgba(144, 174, 173, 0.8) !important;
-                background-color: #C73987 !important;
+                background-color: #4E485C !important;
                 color: #655A7C;
             }
 .skills .container .bar .info {
@@ -1265,6 +1265,7 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
 
 
 
