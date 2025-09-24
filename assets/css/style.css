@@ -441,9 +441,9 @@ header .navbar ul li a {
         padding: 1.7rem 3rem;
         border-radius: 0.5em;
         transition: 0.3s;
-        color: #4E485C;
-        background: #FFFFFF;
-        box-shadow: 0px 5px 10px #FFFFFF;
+        color: #4E485C !IMPORTANT;
+        background: #FFFFFF !IMPORTANT;
+        box-shadow: 0px 5px 10px #4E485C;
         font-family: "Nunito", sans-serif;
     }
 .resumebtn .btn span {
@@ -456,10 +456,10 @@ header .navbar ul li a {
   font-size: 1.2rem;
   transition: 0.3s;
 }
-.resumebtn .btn:hover {
+/* .resumebtn .btn:hover {
   background: #2E2E2E;
   color: #fff;
-}
+} */
 .resumebtn .btn:hover i {
   transform: translateX(5px);
 }
@@ -485,6 +485,10 @@ header .navbar ul li a {
   }
 }
 /* about media queries ends*/
+.about .row .content .box-container a{
+  COLOR: #4E485C ! IMPORTANT;
+  font-weight: bold;
+}
 /* about section ends */
 
 /* skills section starts */
@@ -1264,6 +1268,7 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
 
 
 
