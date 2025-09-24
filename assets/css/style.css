@@ -494,7 +494,7 @@ header .navbar ul li a {
 
 /* skills section starts */
 .skills {
-    min-height: 90vh;
+    /* min-height: 90vh; */
     background: #191919;
 }
 .skills h2 {
@@ -1269,6 +1269,7 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
 
 
 
