@@ -67,7 +67,95 @@
 
 </section>
 <!-- hero section ends -->
+<section class="about" id="articles">
+    <h2 class="heading"><i class="fas fa-pencil-alt"></i> Articles </h2>
 
+<div id="medium-articles"></div>
+
+<script>
+  async function loadMediumFeed() {
+    const rssUrl = `https://medium.com/feed/@ayushi.raj7a`;
+    const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
+
+    try {
+      const res = await fetch(apiUrl);
+      const data = await res.json();
+
+      const container = document.getElementById("medium-articles");
+      container.innerHTML = "";
+
+      data.items.slice(0, 3).forEach(item => { // show top 3 articles
+        const article = document.createElement("div");
+        article.className = "article-card";
+        article.innerHTML = `
+          <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
+          <p>${item.description.replace(/<[^>]+>/g, '').substring(0, 150)}...</p>
+          <div class="resumebtn" style="margin-top:0rem;">
+            <a href="${item.link}" target="_blank" class="btn" style="padding: 1rem 1rem; color: #655A7C; box-shadow: none; font-size: 2rem;"><span>Read more...</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+        `;
+        container.appendChild(article);
+      });
+    } catch (err) {
+      console.error("Error loading Medium feed:", err);
+    }
+  }
+
+  loadMediumFeed();
+</script>
+
+<style>
+  #medium-articles {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  .article-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fafafa;
+  }
+  .article-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 2.5rem;
+  }
+  .article-card a {
+    text-decoration: none;
+    color: #655A7C; 
+    font-size: 2rem;
+  }
+</style>
+<div id="medium-articles">
+    <div class="article-card" style="
+    margin-top: 8px;
+">
+    <a href = "https://drive.google.com/file/d/18p4VwCGJPCi-ce41mLnsLPSOz8cIR7cl/view?usp=sharing">
+        <h3 class="heading">more personal...</h3>
+    </a>
+
+    
+</div>
+</section>
+<section class="skills" id="work">
+    <h2 class="heading"><i class="fas fa-clipboard-check"></i> Work </h2>
+    <div id="medium-articles">
+    <div class="article-card">
+        <a href = "https://drive.google.com/drive/folders/1np5GySihQZWHfdEZ5PBADIRUZ8bwwly9">
+            <h3 class="heading"><i>Learn & Play</i></h3>
+        </a>
+    </div>
+    <div class="article-card">
+        <a href = "https://drive.google.com/file/d/1ju_ZtI5J76o433heufyNRjeibSXVPHqX/view?usp=sharing">
+            <h3 class="heading"><i>Projects!</i></h3>
+        </a>
+    </div>
+    </div>
+    <div id="medium-articles"></div>
+</section>
 
 <!-- about section starts -->
 <section class="about" id="about">
@@ -346,96 +434,6 @@
 </section>
 <!-- experience section ends -->
 
-<section class="about" id="articles">
-    <h2 class="heading"><i class="fas fa-pencil-alt"></i> Articles </h2>
-
-<div id="medium-articles"></div>
-
-<script>
-  async function loadMediumFeed() {
-    const rssUrl = `https://medium.com/feed/@ayushi.raj7a`;
-    const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
-
-    try {
-      const res = await fetch(apiUrl);
-      const data = await res.json();
-
-      const container = document.getElementById("medium-articles");
-      container.innerHTML = "";
-
-      data.items.slice(0, 3).forEach(item => { // show top 3 articles
-        const article = document.createElement("div");
-        article.className = "article-card";
-        article.innerHTML = `
-          <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
-          <p>${item.description.replace(/<[^>]+>/g, '').substring(0, 150)}...</p>
-          <div class="resumebtn" style="margin-top:0rem;">
-            <a href="${item.link}" target="_blank" class="btn" style="padding: 1rem 1rem; color: #655A7C; box-shadow: none; font-size: 2rem;"><span>Read more...</span>
-                <i class="fas fa-chevron-right"></i>
-            </a>
-        </div>
-        `;
-        container.appendChild(article);
-      });
-    } catch (err) {
-      console.error("Error loading Medium feed:", err);
-    }
-  }
-
-  loadMediumFeed();
-</script>
-
-<style>
-  #medium-articles {
-    display: grid;
-    gap: 1rem;
-    max-width: 600px;
-    margin: 20px auto;
-  }
-  .article-card {
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background: #fafafa;
-  }
-  .article-card h3 {
-    margin: 0 0 0.5rem;
-    font-size: 2.5rem;
-  }
-  .article-card a {
-    text-decoration: none;
-    color: #655A7C; 
-    font-size: 2rem;
-  }
-</style>
-<div id="medium-articles">
-    <div class="article-card" style="
-    margin-top: 8px;
-">
-    <a href = "https://drive.google.com/file/d/18p4VwCGJPCi-ce41mLnsLPSOz8cIR7cl/view?usp=sharing">
-        <h3 class="heading">more personal...</h3>
-    </a>
-
-    
-</div>
-</section>
-<section class="skills" id="work">
-    <h2 class="heading"><i class="fas fa-clipboard-check"></i> Work </h2>
-    <div id="medium-articles">
-    <div class="article-card">
-        <a href = "https://drive.google.com/drive/folders/1np5GySihQZWHfdEZ5PBADIRUZ8bwwly9">
-            <h3 class="heading"><i>Learn & Play</i></h3>
-        </a>
-    </div>
-    <div class="article-card">
-        <a href = "https://drive.google.com/file/d/1ju_ZtI5J76o433heufyNRjeibSXVPHqX/view?usp=sharing">
-            <h3 class="heading"><i>Projects!</i></h3>
-        </a>
-    </div>
-    </div>
-    <div id="medium-articles"></div>
-</section>
-
 <!-- footer section starts -->
 <section class="footer">
 
@@ -502,6 +500,7 @@
 
 </body>
 </html>
+
 
 
 
